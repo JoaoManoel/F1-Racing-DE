@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: prod
 
-   defaults:
+    defaults:
       run:
         shell: bash
         #Inform a working directory if .tf files are not in root folder
