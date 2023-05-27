@@ -9,6 +9,3 @@ provider "archive" {
 
 provider "random" {
 }
-
-provider "time" {
-}

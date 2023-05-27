@@ -1,9 +1,6 @@
 resource "random_string" "random" {
   length  = 6
   special = false
-  keepers = {
-    first = "${timestamp()}"
-  }
 }
 
 resource "google_bigquery_dataset" "dataset" {
@@ -111,60 +108,4 @@ resource "google_bigquery_job" "driver_standings_job" {
     write_disposition = "WRITE_TRUNCATE"
     source_format     = "PARQUET"
   }
-}
-
-resource "time_sleep" "wait" {
-  depends_on = [google_bigquery_job.constructor_standings_job, google_bigquery_job.driver_standings_job]
-
-  create_duration = "90s"
-}
-
-resource "google_bigquery_table" "constructor_standings_2023_MAT" {
-  dataset_id = google_bigquery_dataset.dataset.dataset_id
-  table_id   = "constructor_standings_2023_MAT"
-
-  labels = {
-    project = "f1_racing"
-  }
-
-  materialized_view {
-    query = <<-EOF
-      SELECT
-        team,
-        total_points,
-        wins
-      FROM
-        `${google_bigquery_table.constructor_standings.project}.${google_bigquery_table.constructor_standings.dataset_id}.constructor_standings`
-      WHERE
-        race_year = 2023
-    EOF
-  }
-
-  depends_on = [time_sleep.wait]
-}
-
-
-resource "google_bigquery_table" "driver_standings_2023_MAT" {
-  dataset_id = google_bigquery_dataset.dataset.dataset_id
-  table_id   = "driver_standings_2023_MAT"
-
-  labels = {
-    project = "f1_racing"
-  }
-
-  materialized_view {
-    query = <<-EOF
-      SELECT
-        driver_name,
-        team,
-        total_points,
-        wins
-      FROM
-        `${google_bigquery_table.driver_standings.project}.${google_bigquery_table.driver_standings.dataset_id}.driver_standings`
-      WHERE
-        race_year = 2023
-    EOF
-  }
-
-  depends_on = [time_sleep.wait]
 }
