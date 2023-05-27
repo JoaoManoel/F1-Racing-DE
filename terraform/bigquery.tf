@@ -1,3 +1,8 @@
+resource "random_string" "random" {
+  length  = 6
+  special = false
+}
+
 resource "google_bigquery_dataset" "dataset" {
   dataset_id = "F1_Racing"
   location   = "us-central1"
