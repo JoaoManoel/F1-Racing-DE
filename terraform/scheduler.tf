@@ -1,6 +1,6 @@
 resource "google_cloud_scheduler_job" "job" {
   name      = "sch-update-F1Racing-${var.environment}"
-  schedule  = "0 1 * * 1"
+  schedule  = "0 13 * * 1"
   time_zone = "Etc/GMT"
 
   http_target {

@@ -112,7 +112,7 @@ resource "google_workflows_workflow" "update-F1Racing" {
                   pysparkBatch:
                       args:
                       - gs://${var.bucket-presentation-zone}/F1_Racing
-                      - ${var.project}.F1_Racing2
+                      - ${var.project}.F1_Racing
                       jarFileUris:
                       - gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.30.0.jar
                       - gs://hadoop-lib/gcs/gcs-connector-hadoop3-2.2.13.jar
