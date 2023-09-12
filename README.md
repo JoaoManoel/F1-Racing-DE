@@ -5,7 +5,7 @@
 ![Arquitetura](assets/architecture.jpg)
 
 ### 2. Projeto
-- O projeto foi inspirado no [curso](https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers) ministrado pelo professor Ramesh Retnasamy, porém, diferentemente do projeto original, o meu utiliza as tecnologias da Google Cloud em vez do Databricks. Além disso, é utilizado o Terraform para automatizar o deploy e a utilização de ferramentas serverless.
+O projeto foi inspirado no [curso](https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers) ministrado pelo professor Ramesh Retnasamy, porém, diferentemente do projeto original, o meu utiliza as tecnologias da Google Cloud em vez do Databricks. Além disso, é utilizado o Terraform para automatizar o deploy e a utilização de ferramentas serverless.
 
 ##### 2.1 Descrição do dataset
 Utilizamos a [API do Ergast](https://ergast.com/mrd/).
