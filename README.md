@@ -8,9 +8,7 @@
 O projeto foi inspirado no [curso](https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers) ministrado pelo professor Ramesh Retnasamy, porém, diferentemente do projeto original, o meu utiliza as tecnologias da Google Cloud em vez do Databricks. Além disso, é utilizado o Terraform para automatizar o deploy e a utilização de ferramentas serverless.
 
 ##### 2.1 Descrição do dataset
-Utilizamos a [API do Ergast](https://ergast.com/mrd/).
-
-"A API de Desenvolvedor Ergast é um serviço web experimental que fornece um registro histórico de dados de corridas de automobilismo para fins não comerciais. Por favor, leia os termos e condições de uso. A API fornece dados para a série de Fórmula 1, desde o início dos campeonatos mundiais em 1950."
+"A [API de Desenvolvedor Ergast](https://ergast.com/mrd/) é um serviço web experimental que fornece um registro histórico de dados de corridas de automobilismo para fins não comerciais. Por favor, leia os termos e condições de uso. A API fornece dados para a série de Fórmula 1, desde o início dos campeonatos mundiais em 1950."
 
 ![](assets/ergast_diagram.png)
 
