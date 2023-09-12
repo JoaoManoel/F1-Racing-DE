@@ -114,11 +114,11 @@ resource "google_workflows_workflow" "update-F1Racing" {
                       - gs://${var.bucket-presentation-zone}/F1_Racing
                       - ${var.project}.F1_Racing
                       jarFileUris:
-                      - gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.30.0.jar
+                      - gs://spark-lib/bigquery/spark-3.3-bigquery-0.31.1.jar
                       - gs://hadoop-lib/gcs/gcs-connector-hadoop3-2.2.13.jar
                       mainPythonFileUri: gs://${data.google_storage_bucket.default_bucket.name}/pyspark_scripts/update_bq.py
                   runtimeConfig:
-                      version: '2.1'
+                      version: '2.0'
                   environmentConfig:
                       executionConfig:
                           subnetworkUri: default
