@@ -61,5 +61,5 @@ O Looker consulta os dados armazenados no Big Query para montar as tabelas agreg
 
 ### 5. Reconhecimentos
 
-<p> [“The Ergast API.”](https://ergast.com/mrd/). </p>
-<p>[Curso Azure Databricks & Spark For Data Engineers (PySpark / SQL) do professor Ramesh Retnasamy](https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers/)</p>
+[“The Ergast API.”](https://ergast.com/mrd/)
+[Curso Azure Databricks & Spark For Data Engineers (PySpark / SQL) do professor Ramesh Retnasamy](https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers/)
