@@ -12,7 +12,7 @@ Utilizamos a [API do Ergast](https://ergast.com/mrd/).
 
 "A API de Desenvolvedor Ergast é um serviço web experimental que fornece um registro histórico de dados de corridas de automobilismo para fins não comerciais. Por favor, leia os termos e condições de uso. A API fornece dados para a série de Fórmula 1, desde o início dos campeonatos mundiais em 1950."
 
-![](assets/Ergast_diagram.png)
+![](assets/ergast_diagram.png)
 
 
 ### 3. Solução
